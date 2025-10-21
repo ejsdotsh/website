@@ -1,19 +1,35 @@
-baseURL: "https://ejs.sh"
+baseURL: "https://ej.saha.la"
 languageCode: en-us
-title: "e.j. sahala (they/them)"
+title: "ej.saha.la"
 theme: "github.com/ejsdotsh/yacht-hugo-theme"
-## theme as hugo module
 module:
   imports:
-    path: "github.com/ejsdotsh/yacht-hugo-theme"
-    disable: false
+    - path: "github.com/ejsdotsh/yacht-hugo-theme"
+      disable: false
 
-  mounts:
-    - source: "node_modules/bulma/"
-      target: "assets/sass/bulma"
-    - source: "node_modules/@catppuccin/palette/scss/"
-      target: "assets/sass/ctp"
+params:
+  author: "e.j. sahala (they/them)"
+  copyrightFrom: "2003"
+  logoPicture: "images/ejs-sh.svg"
+  profilePicture: "images/profile.png"
+  profilePictureAlt: "a photo of e.j. taking a photo"
 
+  # github integration
+  gh_url: "https://api.github.com/search/repositories"
+  gh_user: "ejsdotsh"
+
+  subTitle: |
+    personal site of e.j. sahala (they/them). (infrequent) musings on technology, coffee, and other stuff
+
+  description: |
+    personal site of e.j. sahala (they/them). (infrequent) musings on coffee, networking, automation, technology, philosophy, and sometimes other stuff.
+
+    #BlackLivesMatter #TransLivesMatter
+
+
+# github integration
+gh_user_api: "https://api.github.com/users"
+gh_user: "ejsdotsh"
 #  paginate: 25
 
 # Localized dates requires Hugo version 0.87.0
@@ -51,3 +67,62 @@ related:
 enableEmoji: true
 # enableRobotsTXT: true
 enableGitInfo: true
+
+
+menus:
+  main:
+  - identifier: "home"
+    name: "home"
+    weight: 100
+    url: "/"
+  - identifier: "about"
+    name: "about"
+    weight: 110
+    url: "/about/"
+  # - identifier: "blog"
+  #   name: "blog"
+  #   weight: 130
+  #   url: "/posts/"
+  # - identifier: "project"
+  #   name: "projects"
+  #   weight: 140
+  #   url: "/projects/"
+  # - identifier: "contact"
+  #   name: "contact"
+  #   weight: 1000
+  #   url: "/contact/"
+
+
+highlight:
+  style: "catppuccin-frappe"
+  lineNos: true
+goldmark:
+  renderer:
+    unsafe: true
+
+# charts
+# mermaid: true
+
+# LaTeX
+# katex: true
+
+# theme control
+#  displayMode: "dark"
+#  disableThemeSwitcher: true
+#  doNotLoadAnimations: true
+#  contentRatio: 0.7
+# 
+# available palettes
+#  "latte", "frappe", "macchiato", "mocha" :
+# palette: "mocha"
+
+# params.math:
+# enable: true
+# use: "katex"
+
+
+# footer:
+#   - identifier: "MPL-2.0"
+#     name: "MPL-2.0"
+#     weight: 1
+#     url: "http://mozilla.org/MPL/2.0/"

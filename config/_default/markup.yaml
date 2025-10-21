@@ -1,6 +1,0 @@
-highlight:
-  style: "catppuccin-frappe"
-  lineNos: true
-goldmark:
-  renderer:
-    unsafe: true

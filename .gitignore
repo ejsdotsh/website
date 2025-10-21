@@ -17,9 +17,6 @@
 !go.sum
 !go.mod
 
-# npm & webpack
-!package*.json
-
 # theme components
 !archetypes/**
 !assets/**

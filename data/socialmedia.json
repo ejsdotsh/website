@@ -1,0 +1,20 @@
+{ "accounts":
+  [
+    {
+      "name": "Github",
+      "icon": "fab fa-github",
+      "url": "https://github.com/ejsdotsh/yacht-hugo-theme"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "url": "https://linkedin.com/in/ejsdotsh"
+    },
+    {
+      "name": "e-mail",
+      "icon": "fas fa-envelope",
+      "url": "mailto:contactme@ejs.sh"
+
+    }
+  ]
+}
