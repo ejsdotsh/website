@@ -7,26 +7,23 @@
 !/.gitkeep
 
 !LICENSE
-!VERSION
-!Makefile
+# !VERSION
+# !Makefile
 
-!README.md
-!theme.toml
+# !README.md
+# !theme.toml
 
 # hugo modules
 !go.sum
 !go.mod
 
 # theme components
-!archetypes/**
-!assets/**
+# !archetypes/**
+# !assets/**
 !config/**
 !content/**
 !data/**
 !static/**
-
-# one document directory to consolidate them all
-!docs/**/*.md
 
 # and if any of the above files are in (sub)directories
 !*/
@@ -35,3 +32,4 @@
 exp/**
 node_modules/**
 public/**
+resources/**

@@ -10,7 +10,7 @@ module:
 params:
   author: "e.j. sahala (they/them)"
   copyrightFrom: "2003"
-  logoPicture: "images/ejs-sh.svg"
+  # logoPicture: "images/ejs-sh.svg"
   profilePicture: "images/profile.png"
   profilePictureAlt: "a photo of e.j. taking a photo"
 
@@ -21,10 +21,7 @@ params:
   subTitle: |
     personal site of e.j. sahala (they/them). (infrequent) musings on technology, coffee, and other stuff
 
-  description: |
-    personal site of e.j. sahala (they/them). (infrequent) musings on coffee, networking, automation, technology, philosophy, and sometimes other stuff.
-
-    #BlackLivesMatter #TransLivesMatter
+  description:
 
 
 # github integration
@@ -65,7 +62,6 @@ related:
       weight: 10.0
 
 enableEmoji: true
-# enableRobotsTXT: true
 enableGitInfo: true
 
 
@@ -79,10 +75,10 @@ menus:
     name: "about"
     weight: 110
     url: "/about/"
-  # - identifier: "blog"
-  #   name: "blog"
-  #   weight: 130
-  #   url: "/posts/"
+  - identifier: "blog"
+    name: "blog"
+    weight: 130
+    url: "https://ejs.wtf/blog/"
   # - identifier: "project"
   #   name: "projects"
   #   weight: 140
