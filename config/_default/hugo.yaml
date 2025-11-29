@@ -23,31 +23,25 @@ params:
 
   description:
 
-
-# github integration
-gh_user_api: "https://api.github.com/users"
-gh_user: "ejsdotsh"
-#  paginate: 25
-
 # Localized dates requires Hugo version 0.87.0
 localizedDates:
   true
-  # date format
-  ##singleDateFormat: "2006-01-02"
-  ##indexDateFormat: "2006-01-02"
-  ##listDateFormat: "2006-01-02"
+# date format
+##singleDateFormat: "2006-01-02"
+##indexDateFormat: "2006-01-02"
+##listDateFormat: "2006-01-02"
 
 taxonomies:
-  year: "year"
-  month: "month"
+  # year: "year"
+  # month: "month"
   category: "categories"
-  series: "series"
+  # series: "series"
   tag: "tags"
 
 permalinks:
-  blog: "blog/:year/:month/:slug/"
-  year: "/blog/:slug/"
-  month: "/blog/:slug/"
+  blog: "posts/:year/:month/:slug/"
+  year: "/posts/:slug/"
+  month: "/posts/:slug/"
 
 related:
   includeNewer: true
@@ -64,30 +58,28 @@ related:
 enableEmoji: true
 enableGitInfo: true
 
-
 menus:
   main:
-  - identifier: "home"
-    name: "home"
-    weight: 100
-    url: "/"
-  - identifier: "about"
-    name: "about"
-    weight: 110
-    url: "/about/"
-  - identifier: "blog"
-    name: "blog"
-    weight: 130
-    url: "https://ejs.wtf/blog/"
-  # - identifier: "project"
-  #   name: "projects"
-  #   weight: 140
-  #   url: "/projects/"
-  # - identifier: "contact"
-  #   name: "contact"
-  #   weight: 1000
-  #   url: "/contact/"
-
+    - identifier: "home"
+      name: "home"
+      weight: 100
+      url: "/"
+    - identifier: "about"
+      name: "about"
+      weight: 110
+      url: "/about/"
+    - identifier: "blog"
+      name: "blog"
+      weight: 130
+      url: "https://ejs.wtf/blog/"
+    - identifier: "project"
+      name: "projects"
+      weight: 140
+      url: "/projects/"
+    # - identifier: "contact"
+    #   name: "contact"
+    #   weight: 1000
+    #   url: "/contact/"
 
 highlight:
   style: "catppuccin-frappe"
@@ -98,27 +90,13 @@ goldmark:
 
 # charts
 # mermaid: true
-
+#
 # LaTeX
 # katex: true
-
-# theme control
-#  displayMode: "dark"
-#  disableThemeSwitcher: true
-#  doNotLoadAnimations: true
-#  contentRatio: 0.7
-# 
-# available palettes
-#  "latte", "frappe", "macchiato", "mocha" :
-# palette: "mocha"
-
+#
 # params.math:
 # enable: true
 # use: "katex"
 
-
-# footer:
-#   - identifier: "MPL-2.0"
-#     name: "MPL-2.0"
-#     weight: 1
-#     url: "http://mozilla.org/MPL/2.0/"
+enableRobotsTXT: true
+# minify: true
