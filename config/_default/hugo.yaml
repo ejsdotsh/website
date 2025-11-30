@@ -1,7 +1,7 @@
-baseURL: "https://ej.saha.la"
+baseURL: "https://ejs.sh"
 languageCode: en-us
 title: "ej.saha.la"
-theme: "github.com/ejsdotsh/yacht-hugo-theme"
+# theme: "github.com/ejsdotsh/yacht-hugo-theme"
 module:
   imports:
     - path: "github.com/ejsdotsh/yacht-hugo-theme"
