@@ -1,11 +1,46 @@
-baseURL: "https://ejs.sh"
-languageCode: en-us
+baseURL: "https://ej.saha.la"
+locale: en-us
 title: "ej.saha.la"
-# theme: "github.com/ejsdotsh/yacht-hugo-theme"
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+  - source: 'assets/notwatching/hugo_stats\.json'
+    target: css
+  - source: '(postcss|tailwind)\.config\.js'
+    target: css
+
+hugoVersion:
+   min: "0.166.0"
+   extended: true
+
 module:
+  mounts:
+  - source: assets
+    target: assets
+  - disableWatch: true
+    source: hugo_stats.json
+    target: assets/notwatching/hugo_stats.json
   imports:
-    - path: "github.com/ejsdotsh/yacht-hugo-theme"
+    - path: github.com/ejsdotsh/yacht-hugo-theme
       disable: false
+
+security:
+  exec:
+    allow:
+    - ^(dart-)?sass$
+    - ^go$
+    - ^git$
+    - ^node$
+    - ^postcss$
+    - ^tailwindcss$
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  duplicateResourceFiles: true
 
 params:
   author: "e.j. sahala (they/them)"
@@ -81,12 +116,9 @@ menus:
     #   weight: 1000
     #   url: "/contact/"
 
-highlight:
-  style: "catppuccin-frappe"
-  lineNos: true
-goldmark:
-  renderer:
-    unsafe: true
+# highlight:
+#   style: "catppuccin-frappe"
+#   lineNos: true
 
 # charts
 # mermaid: true
