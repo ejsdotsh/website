@@ -2,34 +2,35 @@
 # Ignore everything
 *
 
-!/.dockerignore
 !/.gitignore
 !/.github/**/*.yaml
 
 !LICENSE
-# !VERSION
-# !Makefile
+!VERSION
+!Makefile
 
-# !README.md
-# !theme.toml
+!README.md
+!config/**/*.yaml
+!content/**
+!static/**
+!assets/**
 
 # hugo modules
 !go.sum
 !go.mod
 
-# theme components
-# !archetypes/**
-# !assets/**
-!config/**
-!content/**
-!data/**
-!static/**
+# npm for tailwind cli
+!package.json
+!package-lock.json
 
-# and if any of the above files are in (sub)directories
+# but allow the above files in (sub)directories
 !*/
 
 # explicitly ignore experimentation and in-progress development
 exp/**
+.exp/**
 node_modules/**
 public/**
-resources/**
+.hugo_build.lock
+resources/
+hugo_stats.json
